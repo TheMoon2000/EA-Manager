@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="Participant Table" id="c22-O7-iKe" customClass="ParticipantView" customModule="EA_Manager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView identifier="Message View" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKc-KO-ACP">
+                    <rect key="frame" x="86" y="-155" width="274" height="154"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMX-m6-Dw5">
+                            <rect key="frame" x="15" y="107" width="241" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" alignment="center" title="Leo Li (11BY) has provided the following information:" id="1Za-ky-6jC">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kas-nh-kFi">
+                            <rect key="frame" x="15" y="18" width="241" height="72"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" placeholderString="The student was lazy and did not provide any supplementary information." id="e2u-cR-VNb">
+                                <font key="font" metaFont="system" size="12"/>
+                                <color key="textColor" red="0.0" green="0.32925191520000002" blue="0.66336262229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <outlet property="delegate" destination="c22-O7-iKe" id="gRL-7e-7vZ"/>
+                            </connections>
+                        </textField>
+                        <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="mf0-Yc-zVY">
+                            <rect key="frame" x="64" y="96" width="146" height="5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </box>
+                    </subviews>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zEa-Ju-wa7">
+                    <rect key="frame" x="18" y="14" width="136" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Jerry Shan" id="cdQ-Sc-tZo">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32l-yr-2Qp">
+                    <rect key="frame" x="169" y="14" width="52" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="11FC" id="Uir-fN-8ub">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5gY-zn-MSQ">
+                    <rect key="frame" x="294" y="5" width="102" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Approve" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pvl-FA-Uwd">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="approve:" target="c22-O7-iKe" id="ZxH-ol-TNc"/>
+                    </connections>
+                </button>
+                <box verticalHuggingPriority="750" alphaValue="0.59999999999999998" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="GfX-qb-uCi">
+                    <rect key="frame" x="12" y="-2" width="423" height="5"/>
+                </box>
+                <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="A8t-Qp-yT8">
+                    <rect key="frame" x="337" y="15" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </progressIndicator>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vmh-E4-auX">
+                    <rect key="frame" x="299" y="13" width="101" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Approved" id="uQA-OZ-C46">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xax-vN-0Ej">
+                    <rect key="frame" x="402" y="5" width="35" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="mQ8-fz-NZ5"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSGoRightTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6wT-AQ-bPJ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="sendMessage:" target="c22-O7-iKe" id="m8U-Y9-mPO"/>
+                    </connections>
+                </button>
+                <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="JdX-yU-j8H">
+                    <rect key="frame" x="215" y="15" width="16" height="16"/>
+                </progressIndicator>
+            </subviews>
+            <constraints>
+                <constraint firstItem="JdX-yU-j8H" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="8dM-bz-bTI"/>
+                <constraint firstAttribute="bottom" secondItem="GfX-qb-uCi" secondAttribute="bottom" id="HRJ-38-4Zt"/>
+                <constraint firstItem="JdX-yU-j8H" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="SWX-OJ-vhx"/>
+                <constraint firstItem="xax-vN-0Ej" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="12" id="eRX-4h-6sE"/>
+                <constraint firstAttribute="trailing" secondItem="GfX-qb-uCi" secondAttribute="trailing" constant="12" id="eVg-ql-XRn"/>
+                <constraint firstItem="GfX-qb-uCi" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="12" id="f8H-rH-iaY"/>
+                <constraint firstAttribute="trailing" secondItem="xax-vN-0Ej" secondAttribute="trailing" constant="16" id="vEe-6W-u4u"/>
+            </constraints>
+            <connections>
+                <outlet property="advisory" destination="32l-yr-2Qp" id="ktH-9l-Oxl"/>
+                <outlet property="approvalButton" destination="5gY-zn-MSQ" id="Xoa-Ql-YXX"/>
+                <outlet property="approvalSpinner" destination="A8t-Qp-yT8" id="Nc7-kd-KRj"/>
+                <outlet property="approveLabel" destination="Vmh-E4-auX" id="5vI-Ck-qa0"/>
+                <outlet property="attendanceSpinner" destination="JdX-yU-j8H" id="LZ0-yY-08Z"/>
+                <outlet property="contentView" destination="GKc-KO-ACP" id="mDN-dA-nIL"/>
+                <outlet property="message" destination="kas-nh-kFi" id="LcV-cL-LLN"/>
+                <outlet property="messageButton" destination="xax-vN-0Ej" id="sQ3-s9-DqT"/>
+                <outlet property="messageTo" destination="DMX-m6-Dw5" id="Ivv-QN-Bja"/>
+                <outlet property="name" destination="zEa-Ju-wa7" id="HbR-CY-qnF"/>
+            </connections>
+            <point key="canvasLocation" x="308.5" y="160.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSGoRightTemplate" width="9" height="12"/>
+    </resources>
+</document>

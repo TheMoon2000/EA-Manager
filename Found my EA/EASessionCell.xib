@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="Session Cell" id="c22-O7-iKe" customClass="EASessionCell" customModule="EA_Manager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fnx-uk-NTR">
+                    <rect key="frame" x="18" y="17" width="327" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="April 27, 2017 (Thursday)" id="2FK-OE-f12">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Or1-h1-a4w">
+                    <rect key="frame" x="0.0" y="0.0" width="363" height="50"/>
+                </customView>
+                <box verticalHuggingPriority="750" alphaValue="0.69999999999999996" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="tzE-j7-82Z">
+                    <rect key="frame" x="28" y="-2" width="307" height="5"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="tzE-j7-82Z" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="28" id="974-CK-x8a"/>
+                <constraint firstAttribute="trailing" secondItem="fnx-uk-NTR" secondAttribute="trailing" constant="20" id="9Qh-wq-xzO"/>
+                <constraint firstAttribute="trailing" secondItem="Or1-h1-a4w" secondAttribute="trailing" id="EdJ-mn-SSt"/>
+                <constraint firstAttribute="bottom" secondItem="tzE-j7-82Z" secondAttribute="bottom" id="GhI-3W-ygO"/>
+                <constraint firstAttribute="trailing" secondItem="tzE-j7-82Z" secondAttribute="trailing" constant="28" id="IJW-8O-vdj"/>
+                <constraint firstAttribute="bottom" secondItem="Or1-h1-a4w" secondAttribute="bottom" id="TBf-kU-qiT"/>
+                <constraint firstItem="fnx-uk-NTR" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="iXW-tZ-FzA"/>
+                <constraint firstItem="fnx-uk-NTR" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="veA-qe-ssO"/>
+                <constraint firstItem="Or1-h1-a4w" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="vvy-D6-MtE"/>
+                <constraint firstItem="Or1-h1-a4w" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="z35-pd-FW4"/>
+            </constraints>
+            <connections>
+                <outlet property="dateLabel" destination="fnx-uk-NTR" id="5RO-5w-eJh"/>
+                <outlet property="overlay" destination="Or1-h1-a4w" id="msI-FN-bqi"/>
+            </connections>
+            <point key="canvasLocation" x="239.5" y="151"/>
+        </customView>
+    </objects>
+</document>
